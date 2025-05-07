@@ -70,7 +70,7 @@ function Scene() {
         onLoad={(gltf) => {
           gltf.scene.traverse((node) => {
             if (node.isMesh && node.material) {
-              node.material.emissive = node.material.emissive || new THREE.Color(0x000000);
+              node.material.emissive = node.material.emissive || new THREE.Color('pink');
               node.material.emissiveIntensity = 4; // Ajustez l'intensité
             }
           });
